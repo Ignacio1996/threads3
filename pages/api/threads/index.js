@@ -6,6 +6,7 @@ connectDB();
 
 export default async function handler(req, res) {
   const { method } = req;
+  console.log("threads.js 8 | got to route with method", method);
 
   switch (method) {
     case "GET":
