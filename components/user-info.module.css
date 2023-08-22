@@ -1,0 +1,111 @@
+.avatarBigIcon {
+  position: relative;
+  width: 64.09px;
+  height: 64px;
+}
+.alissonRochinski,
+.arochinski,
+.threadsnet {
+  position: relative;
+  line-height: 19px;
+}
+.arochinski,
+.threadsnet {
+  font-weight: 500;
+}
+.threadsnet {
+  font-size: var(--font-size-4xs);
+  line-height: 10px;
+  font-family: var(--font-inter);
+  color: var(--color-dimgray);
+  text-align: left;
+}
+.threadsnetWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-6xs) var(--padding-xs);
+  background-color: var(--color-gray-100);
+  border-radius: var(--br-29xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.infos2,
+.infos3 {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.infos3 {
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--font-size-xs);
+}
+.infos2 {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.uiDesigner {
+  margin: 0;
+}
+.uiDesignerContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 19px;
+  font-weight: 500;
+}
+.infos1 {
+  padding: var(--padding-5xs) 0;
+}
+.infos,
+.infos1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.seguidores {
+  position: relative;
+  letter-spacing: -0.2px;
+  line-height: 19px;
+}
+.respostasECurtidasChild {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-dimgray);
+  width: 2px;
+  height: 2px;
+}
+.infos4,
+.respostasECurtidas,
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.respostasECurtidas {
+  gap: var(--gap-9xs);
+}
+.infos4,
+.userinfo {
+  font-size: var(--font-size-smi);
+  color: var(--color-dimgray);
+}
+.userinfo {
+  align-self: stretch;
+  width: 400px;
+  flex-direction: column;
+  padding: var(--padding-29xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
