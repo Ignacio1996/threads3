@@ -1,12 +1,5 @@
-import { useMemo } from "react";
 import styles from "./thread.module.css";
-const Thread = ({ likeCount, showReactions, auraColor, threadContentText }) => {
-  const auraStyle = useMemo(() => {
-    return {
-      color: auraColor,
-    };
-  }, [auraColor]);
-
+const Thread = ({ likeCount, showReactions, threadContentText }) => {
   return (
     <div className={styles.thread}>
       <div className={styles.thread1}>
@@ -16,9 +9,7 @@ const Thread = ({ likeCount, showReactions, auraColor, threadContentText }) => {
         <div className={styles.infosActions}>
           <div className={styles.info}>
             <div className={styles.headingInfos}>
-              <div className={styles.aura} style={auraStyle}>
-                aura
-              </div>
+              <div className={styles.aura}>aura</div>
               <div className={styles.rightInfos}>
                 <div className={styles.min}>2min</div>
                 <div className={styles.dots}>
