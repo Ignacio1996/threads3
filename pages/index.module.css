@@ -31,7 +31,7 @@
 }
 .righInfos {
   justify-content: flex-start;
-  gap: var(--gap-3xl);
+  gap: 22px;
 }
 .avatar,
 .nav,
@@ -65,7 +65,7 @@
   font-weight: 500;
 }
 .threadsnet {
-  font-size: var(--font-size-4xs);
+  font-size: 9px;
   line-height: 10px;
   font-family: var(--font-inter);
   color: var(--color-dimgray);
@@ -76,7 +76,7 @@
   border: 0;
   padding: var(--padding-6xs) var(--padding-xs);
   background-color: var(--color-gray-100);
-  border-radius: var(--br-29xl);
+  border-radius: 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -204,9 +204,9 @@
 .actions1 {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-4xs) var(--padding-5xs) var(--padding-6xs);
+  padding: 9px var(--padding-5xs) var(--padding-6xs);
   background-color: var(--color-gray-100);
-  border-radius: var(--br-21xl);
+  border-radius: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -398,7 +398,7 @@
   width: 400px;
   padding: var(--padding-29xl);
   box-sizing: border-box;
-  gap: var(--gap-5xl);
+  gap: 24px;
 }
 .content,
 .contentcontainer,
@@ -424,11 +424,11 @@
 }
 .feed {
   align-self: stretch;
-  background-color: var(--color-gray-200);
+  background-color: #101010;
   height: 1081px;
   flex-shrink: 0;
   text-align: left;
-  font-size: var(--font-size-3xl);
+  font-size: 22px;
   color: var(--color-white);
   font-family: var(--font-poppins);
 }
