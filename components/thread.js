@@ -1,51 +1,20 @@
 import { useMemo } from "react";
 import styles from "./thread.module.css";
 const Thread = ({
-  avatar,
-  temporDolorProidentDuisIn,
-  like,
-  respostas,
+  componentCode,
+  likeCount,
   showReactions,
-  threadPosition,
-  threadAlignSelf,
-  threadBorderBottom,
-  threadWidth,
-  threadFlexShrink,
-  threadFlex,
   auraColor,
-  minColor,
   ellipseDivBackgroundColor,
   ellipseDivBackgroundColor1,
   ellipseDivBackgroundColor2,
-  temporDolorProidentColor,
+  threadContentText,
 }) => {
-  const threadStyle = useMemo(() => {
-    return {
-      position: threadPosition,
-      alignSelf: threadAlignSelf,
-    };
-  }, [threadPosition, threadAlignSelf]);
-
-  const thread1Style = useMemo(() => {
-    return {
-      borderBottom: threadBorderBottom,
-      width: threadWidth,
-      flexShrink: threadFlexShrink,
-      flex: threadFlex,
-    };
-  }, [threadBorderBottom, threadWidth, threadFlexShrink, threadFlex]);
-
   const auraStyle = useMemo(() => {
     return {
       color: auraColor,
     };
   }, [auraColor]);
-
-  const minStyle = useMemo(() => {
-    return {
-      color: minColor,
-    };
-  }, [minColor]);
 
   const ellipseDivStyle = useMemo(() => {
     return {
@@ -65,17 +34,11 @@ const Thread = ({
     };
   }, [ellipseDivBackgroundColor2]);
 
-  const temporDolorProidentStyle = useMemo(() => {
-    return {
-      color: temporDolorProidentColor,
-    };
-  }, [temporDolorProidentColor]);
-
   return (
-    <div className={styles.thread} style={threadStyle}>
-      <div className={styles.thread1} style={thread1Style}>
+    <div className={styles.thread}>
+      <div className={styles.thread1}>
         <div className={styles.thread2}>
-          <img className={styles.avatarIcon} alt="" src={avatar} />
+          <img className={styles.avatarIcon} alt="" src="/avatar6.svg" />
         </div>
         <div className={styles.infosActions}>
           <div className={styles.info}>
@@ -84,9 +47,7 @@ const Thread = ({
                 aura
               </div>
               <div className={styles.rightInfos}>
-                <div className={styles.min} style={minStyle}>
-                  2min
-                </div>
+                <div className={styles.min}>2min</div>
                 <div className={styles.dots}>
                   <div className={styles.dotsChild} style={ellipseDivStyle} />
                   <div className={styles.dotsChild} style={ellipseDiv1Style} />
@@ -94,19 +55,14 @@ const Thread = ({
                 </div>
               </div>
             </div>
-            <div
-              className={styles.temporDolorProident}
-              style={temporDolorProidentStyle}
-            >
-              {temporDolorProidentDuisIn}
-            </div>
+            <div className={styles.iveBeenExploring}>{threadContentText}</div>
           </div>
           <div className={styles.actions}>
-            <img className={styles.likeIcon} alt="" src={like} />
+            <img className={styles.likeIcon} alt="" src={componentCode} />
           </div>
           {showReactions && (
             <div className={styles.reactions}>
-              <div className={styles.respostas}>{respostas}</div>
+              <div className={styles.likes}>{likeCount}</div>
             </div>
           )}
         </div>

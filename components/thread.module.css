@@ -51,7 +51,7 @@
   align-self: stretch;
   justify-content: space-between;
 }
-.temporDolorProident {
+.iveBeenExploring {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-smi);
@@ -78,7 +78,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.respostas {
+.likes {
   position: relative;
   letter-spacing: -0.2px;
   line-height: 19px;
@@ -122,6 +122,6 @@
   position: relative;
   text-align: left;
   font-size: var(--font-size-sm);
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: var(--font-inter);
 }
