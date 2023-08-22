@@ -1,11 +1,142 @@
+.avatarIcon {
+  position: relative;
+  width: 41px;
+  height: 39px;
+}
+.thread2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aura {
+  line-height: 19px;
+  font-weight: 500;
+}
+.aura,
+.dotsChild,
+.min {
+  position: relative;
+}
+.min {
+  line-height: 19px;
+}
+.dotsChild {
+  border-radius: 50%;
+  background-color: var(--color-white);
+  width: 3px;
+  height: 3px;
+}
+.dots {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.headingInfos,
+.rightInfos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rightInfos {
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--font-size-xs);
+  color: var(--color-dimgray);
+}
+.headingInfos {
+  align-self: stretch;
+  justify-content: space-between;
+}
+.iveBeenExploring {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-smi);
+  line-height: 19px;
+}
+.info {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.likeIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.likes {
+  position: relative;
+  letter-spacing: -0.2px;
+  line-height: 19px;
+}
+.reactions {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkgray);
+}
+.infosActions,
+.thread1 {
+  flex: 1;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.infosActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.thread1 {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-darkslategray);
+  overflow: hidden;
+  padding: var(--padding-base) var(--padding-base) var(--padding-base)
+    var(--padding-xs);
+}
+.feed,
+.reactions1,
+.thread,
+.thread1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.thread {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.feed,
+.reactions1 {
+  align-items: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkgray);
+}
 .feed {
   align-self: stretch;
   flex: 1;
   border-right: 1px solid var(--color-darkslategray);
   border-bottom: 1px solid var(--color-darkslategray);
   border-left: 1px solid var(--color-darkslategray);
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
 }

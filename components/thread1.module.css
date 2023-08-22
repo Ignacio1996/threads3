@@ -24,7 +24,7 @@
 }
 .dotsChild {
   border-radius: 50%;
-  background-color: var(--color-black);
+  background-color: var(--color-white);
   width: 3px;
   height: 3px;
 }
@@ -45,13 +45,13 @@
   justify-content: flex-start;
   gap: var(--gap-base);
   font-size: var(--font-size-xs);
-  color: var(--color-darkgray);
+  color: var(--color-dimgray);
 }
 .headingInfos {
   align-self: stretch;
   justify-content: space-between;
 }
-.iveBeenExploring {
+.threadContentText {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-smi);
@@ -105,21 +105,18 @@
 }
 .thread,
 .thread1 {
+  align-self: stretch;
   flex-direction: row;
 }
 .thread1 {
-  align-self: stretch;
-  border-bottom: 1px solid #d9d9d9;
-  box-sizing: border-box;
-  width: 640px;
+  flex: 1;
+  border-bottom: 1px solid var(--color-darkslategray);
   overflow: hidden;
-  flex-shrink: 0;
   padding: var(--padding-base) var(--padding-base) var(--padding-base)
     var(--padding-xs);
   gap: var(--gap-xs);
 }
 .thread {
-  position: relative;
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--color-white);
