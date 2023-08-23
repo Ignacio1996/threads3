@@ -1,4 +1,4 @@
-import styles from "./thread1.module.css";
+import styles from "./thread.module.css";
 const Thread = ({ avatar, threadContentText, likes, showReactions }) => {
   return (
     <div className={styles.thread}>
