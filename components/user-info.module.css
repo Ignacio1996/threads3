@@ -109,3 +109,8 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+@media screen and (max-width: 1200px) {
+  .userinfo {
+    display: none;
+  }
+}

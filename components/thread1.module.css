@@ -10,13 +10,13 @@
   align-items: center;
   justify-content: flex-start;
 }
-.aura {
+.username {
   line-height: 19px;
   font-weight: 500;
 }
-.aura,
 .dotsChild,
-.min {
+.min,
+.username {
   position: relative;
 }
 .min {
